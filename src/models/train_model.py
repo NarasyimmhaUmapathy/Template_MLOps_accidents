@@ -14,7 +14,7 @@ y_test = pd.read_csv('data/preprocessed/y_test.csv')
 y_train = np.ravel(y_train)
 y_test = np.ravel(y_test)
 
-rf_classifier = ensemble.RandomForestClassifier(n_jobs = -1,n_estimators=80,criterion="gini")
+rf_classifier = ensemble.RandomForestClassifier(n_jobs = -1,n_estimators=150,criterion="gini")
 
 #--Train the model
 rf_classifier.fit(X_train, y_train)
